@@ -64,7 +64,17 @@ if  board[0] == board[4] == board[8] and board[0] != "-":
     return True 
 elif board[2] == board[4] == board[6] == board[2] != "-": 
     winner = board[2]
-    return True   
+    return True  
+
+"""Add a new variable Check_tie and function to check for any sort of if any player wins"""
+
+def Check_tie(board):
+    if "-" not in board:
+        print_board(board)
+        print("Wow! It's a tie")
+
+
+
 
 
 #switch the player
