@@ -22,13 +22,15 @@ def print_board(board):
 def player_input(board):
     inp = int(input("Type a number a number 1 between 9: "))
     if inp >= 1 and inp <= 9 and board[inp-1] == "-": #the first two Inp expression check is valid number 1-9
-        board[inp-1] = current_player
+        board[inp-1] = var_player
     else:
         print("Player is already in that place!")   
 
 
 #check for win or tie
 
-#switch the player
+while game_running:
+    print_board(board)
+    player_input(board)
 
 #check for win or tie 2
