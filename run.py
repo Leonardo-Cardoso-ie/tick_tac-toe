@@ -1,6 +1,6 @@
-board = ["-", "-", "-",
-        "-", "-", "-",
-        "-", "-", "-" ]
+board = ["-", "-" , "-",
+        "-", "-" , "-",
+        "-", "-" , "-" ]
 
 """ Create variables"""       
 
@@ -15,10 +15,12 @@ def print_board(board):
     print(board[3] + "|" + board[2] + "|" + board[5])
     print("----------")
     print(board[6] + "|" + board[7] + "|" + board[8]) 
-print_board(board)    
 
 
-#take player input
+"""Take a player input and ad the function to return a value string"""
+
+def player_input(board):
+    inp = int(input("Type a number a number 1 between 9: "))
 
 #check for win or tie
 
