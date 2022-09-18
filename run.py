@@ -27,10 +27,20 @@ def player_input(board):
         print("Player is already in that place!")   
 
 
-#check for win or tie
+"""When horizon var is true, we can break out the loop"""
+
+def horizontal_line(board):
+    global winner
+    if board[0] == board[1] == board[2] and board[1] != "-":
+        winner = board[0]
+        return True 
+    elif board[3] == board[4] == board[5] and board[3] != "-":
+        winner = board[3]
+    elif board[6] == board[7] == board[8] and board[6] != "-":  
+
+
+#check for win or tie 2
 
 while game_running:
     print_board(board)
     player_input(board)
-
-#check for win or tie 2
